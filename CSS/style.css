@@ -1,0 +1,74 @@
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+    
+
+    
+}
+:root{
+    --technology:#FC7F68;
+    --biology:#3EA551;
+    --literature:#363F65;
+    
+
+}
+
+header {
+    max-height: 20rem;
+    display: flex;
+    justify-content: center;
+}
+/*TYPOGRAPHY*/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    height: 10rem;
+    
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+    
+}
+li{
+    margin: 2rem;
+    flex;
+}
+.hero{
+    background-image:url(/img/rsz_1roberto-nickson-396152.jpg);
+    min-height: 50rem;
+}
+
+.interactiv-exhib{
+    background-image: linear-gradient(#363F65,#506BDC);
+    display: flex;
+}
+
+.interactiv-exhib div {
+    margin: 3rem auto;
+}
+.interactiv-exhib img{
+    width: 15rem;
+}
+.intro-exhib{
+    background-color: #fff;
+    width: 15rem;
+    height: 10rem;
+    padding: .3rem;
+
+}
+.technology {
+    border: var(--technology) solid .3rem;
+}
+.biology{
+    border: var(--biology) solid .3rem;
+}
