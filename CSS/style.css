@@ -136,6 +136,24 @@ li{
 .cat-library img{
     border: var(--literature) solid .3rem;
 }
+footer{
+    background: var(--literature);
+    height: 10rem;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    /* padding-top: 5rem;
+    max-width: 50%;
+    height: 15rem;*/
+} 
+footer i{
+    height: 5rem;
+    color: #fff;
+    padding:3rem ;
+    
+
+}
 /* Since firefox doesn't support backdrop-filter */
 @-moz-document url-prefix() {
     .hero-interacive{
