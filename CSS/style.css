@@ -15,6 +15,7 @@ header {
   max-height: 20rem;
   display: flex;
   justify-content: center;
+  border-bottom: var(--literature) solid 1px;
 }
 
 .logo {
@@ -30,7 +31,12 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
-
+h1 {
+  font-weight: bold;
+  color: var(--technology);
+  font-size: 2rem;
+  margin-top: 2rem;
+}
 ul {
   list-style: none;
   display: flex;
@@ -42,6 +48,14 @@ li {
 .light {
   color: #fff;
   border: #fff solid 3px;
+}
+.menu-item {
+  font-family: "Open Sans";
+  color: var(--grey);
+  text-decoration: none;
+}
+.menu-item:hover {
+  color: var(--technology);
 }
 .hero-explore {
   padding: 5rem;
@@ -109,7 +123,7 @@ li {
 .categories img {
   max-height: 15rem;
 }
-.categories h3 {
+.categories h2 {
   text-align: center;
   color: var(--grey);
   padding: 3rem 0 1rem 0;
@@ -125,7 +139,7 @@ li {
 }
 footer {
   background: var(--literature);
-  height: 10rem;
+  height: auto;
 }
 footer div {
   display: flex;
@@ -144,4 +158,64 @@ i.social-icon {
   .hero-interacive {
     background: rgba(0, 0, 0, 0.85);
   }
+}
+
+/* CONTACT-PAGE */
+.contact-page {
+}
+.contact-form,
+.contact,
+.contact-list {
+  background-color: #fff;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 2rem auto;
+}
+.mapouter {
+  padding: 5rem;
+}
+.contact-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.25rem;
+}
+.contact-icon {
+  color: var(--literature);
+}
+.contact-form input {
+  height: 2rem;
+  width: 20rem;
+  color: var(--literature);
+  border: 0em;
+  margin: 0.5rem 0 0.75rem;
+  background-color: #e3e9ff;
+}
+.contact-form label {
+  /* margin-top: 2rem; */
+  font-size: 1.25rem;
+}
+.send-form-btn {
+  text-align: center;
+  font-size: 1.25rem;
+  border: var(--biology) solid 2px;
+  background-color: var(--biology);
+}
+.send-form-btn:hover {
+  background-color: var(--technology);
+  font-weight: 700;
+}
+#message {
+  height: 10rem;
+}
+.page-title {
+  display: flex;
+  justify-content: center;
 }
