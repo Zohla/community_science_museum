@@ -41,7 +41,7 @@ ul {
   list-style: none;
   display: flex;
 }
-li {
+.navigation li {
   margin: 2rem;
 }
 
@@ -219,4 +219,27 @@ i.social-icon {
 .page-title {
   display: flex;
   justify-content: center;
+}
+
+/* VISIT */
+
+.visit-info {
+  max-width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+.visit-info div {
+  max-width: 35rem;
+  margin: 5rem;
+}
+.visit-info h2 {
+  color: var(--grey);
+  font-size: 1.25rem;
+}
+.visit-info p {
+  margin: 0.25rem 0 1rem 0;
+}
+.hours {
+  display: flex;
+  flex-direction: column;
 }
