@@ -242,4 +242,13 @@ i.social-icon {
 .hours {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  background-color: var(--literature);
+  color: #fff;
+}
+.hours span {
+  font-weight: bold;
+}
+.hours li {
+  margin-bottom: 0.5rem;
 }
