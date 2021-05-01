@@ -87,10 +87,19 @@ ul {
   padding: 5rem;
   max-width: 25rem;
   max-height: 15rem;
+  min-width: 23rem;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   grid-area: explore;
   text-align: center;
+  align-self: center;
+}
+.hero-explore-link {
+  text-decoration: none;
+  display: flex;
+}
+.hero h1 {
+  color: #fff;
   align-self: center;
 }
 .hero-interacive {
@@ -105,6 +114,9 @@ ul {
 }
 .hero-interacive span {
   color: var(--technology);
+}
+.hero-interacive a {
+  text-decoration: none;
 }
 .hero {
   background-image: url(/img/rsz_1roberto-nickson-396152.jpg);
@@ -126,11 +138,12 @@ ul {
 .interactiv-exhib,
 .categories {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 20%;
 }
 
-.interactiv-exhib div,
+.intro-exhib-wrapper,
 .categories div {
   margin: 3rem auto;
 }
@@ -142,6 +155,13 @@ ul {
   width: 15rem;
   height: 10rem;
   padding: 0.3rem;
+}
+.intro-exhib a {
+  text-decoration: none;
+  color: var(--literature);
+}
+.intro-exhib a:hover {
+  color: var(--technology);
 }
 .technology {
   border: var(--technology) solid 0.3rem;
@@ -311,4 +331,71 @@ ul {
   width: 20rem;
 }
 .book-button {
+  margin-top: 1.5rem;
+  background-color: var(--biology);
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.7rem;
+  border: var(--biology) solid 1px;
+  align-self: center;
+}
+.book-button:hover {
+  background-color: var(--technology);
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .interactiv-exhib,
+  .categories {
+    margin: 0 10%;
+  }
+  .intro-exhib-wrapper {
+    margin: 3rem 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  /* .interactiv-exhib,
+  .categories {
+    display: flex;
+    flex-wrap: wrap;   
+    }  */
+  .intro-exhib-wrapper,
+  .categories div {
+    margin: 1rem;
+    align-self: center;
+  }
+  .categories h2 {
+    padding: 1rem;
+  }
+  .intro-exhib {
+    height: 5rem;
+  }
+  .hero {
+    grid-template-columns: auto 25% auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". . .  "
+      ". .explore ."
+      ". .  ."
+      "interactive interactive interactive";
+  }
+}
+@media (max-width: 555px) {
+  .hero {
+    background-image: url(/img/rsz_1roberto-nickson-mobile.jpg);
+    background-repeat: no-repeat;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "explore"
+      "."
+      "interactive";
+    /* display: flex;
+    flex-direction: column;
+    height: 30rem; */
+  }
+  .hero-interacive {
+    margin-top: 15rem;
+  }
 }
