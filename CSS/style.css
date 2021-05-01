@@ -259,6 +259,7 @@ ul {
   padding: 2rem;
   background-color: var(--literature);
   color: #fff;
+  min-width: 274px;
 }
 .hours span {
   font-weight: bold;
@@ -267,15 +268,17 @@ ul {
   margin-bottom: 0.5rem;
 }
 
-/* EXPLORE */
-.explore-main {
+/* EXPLORE & INVOLVED*/
+.explore-main,
+.involved-main {
   max-width: 75%;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: auto;
 }
-.explore-main h2 {
+.explore-main h2,
+.involved-main h2 {
   color: var(--grey);
   font-size: 1.25rem;
   margin: 2rem 0 1rem 0;
@@ -284,4 +287,22 @@ ul {
 .explore-image {
   max-height: 20rem;
   /* background-image: url(../img/rsz_teacher-2816112.jpg); */
+}
+/* INTERACTIVE */
+.interactive-main {
+  background-color: var(--literature);
+}
+.interactive-activities-wrapper {
+}
+.interactive-activities-wrapper div {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 3rem;
+  background-color: #fff;
+}
+.interactive-activities-text {
+  /*  display: flex; */
+}
+.interactive-activities-wrapper img {
+  width: 20rem;
 }
