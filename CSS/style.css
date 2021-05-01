@@ -293,10 +293,13 @@ ul {
   background-color: var(--literature);
 }
 .interactive-activities-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .interactive-activities-wrapper div {
   display: flex;
-
+  max-width: 75rem;
   margin: 3rem;
   background-color: #fff;
 }
@@ -306,4 +309,6 @@ ul {
 }
 .interactive-activities-wrapper img {
   width: 20rem;
+}
+.book-button {
 }
