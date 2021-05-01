@@ -296,12 +296,13 @@ ul {
 }
 .interactive-activities-wrapper div {
   display: flex;
-  /* flex-direction: column; */
+
   margin: 3rem;
   background-color: #fff;
 }
 .interactive-activities-text {
-  /*  display: flex; */
+  display: flex;
+  flex-direction: column;
 }
 .interactive-activities-wrapper img {
   width: 20rem;
