@@ -80,6 +80,12 @@ ul {
   text-decoration: none;
   font-weight: bold;
 }
+.menu-btn {
+  display: none;
+}
+nav label {
+  display: none;
+}
 .menu-item:hover {
   color: var(--technology);
 }
@@ -414,7 +420,35 @@ ul {
     margin: 0;
   }
 }
-@media (max-width: 555px) {
+@media (max-width: 768px) {
+  nav label {
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: var(--literature);
+  }
+  .navigation {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 100rem;
+  }
+  .navgation {
+    flex-direction: column;
+  }
+  #menu-btn:checked ~ .navigation {
+    display: block;
+  }
+
+  .logo {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
   .hero {
     background-image: url(/img/rsz_1roberto-nickson-mobile.jpg);
     background-repeat: no-repeat;
