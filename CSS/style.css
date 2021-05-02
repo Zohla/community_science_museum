@@ -426,19 +426,23 @@ nav label {
     font-weight: bold;
     font-size: 3rem;
     margin-left: 1rem;
-    color: var(--literature);
+    color: var(--biology);
   }
   .navigation {
     display: none;
+    flex-direction: column;
+  }
+  .navigation li {
+    border-bottom: var(--literature) solid 1px;
+    padding: 1rem;
+    margin: 0 0 1rem 1rem;
   }
   header {
     justify-content: space-between;
     flex-direction: row-reverse;
-    height: 100rem;
+    max-height: 30rem;
   }
-  .navgation {
-    flex-direction: column;
-  }
+
   #menu-btn:checked ~ .navigation {
     display: block;
   }
