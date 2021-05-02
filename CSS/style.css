@@ -223,9 +223,7 @@ ul {
   width: 20rem;
   /*  margin: 2rem auto; */
 }
-/* .mapouter {
-  padding: 5rem;
-} */
+
 .contact-list {
   display: flex;
   justify-content: center;
@@ -274,9 +272,9 @@ ul {
 /* VISIT */
 
 .visit-info {
-  max-width: 75%;
+  margin: 3rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .visit-info div {
   max-width: 35rem;
@@ -295,7 +293,7 @@ ul {
   padding: 2rem;
   background-color: var(--literature);
   color: #fff;
-  min-width: 274px;
+  width: 274px;
 }
 .hours span {
   font-weight: bold;
@@ -403,6 +401,17 @@ ul {
   .contact-form {
     margin: auto;
     margin-top: 3rem;
+  }
+  .visit-info {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 0;
+  }
+  .visit-info div {
+    margin: 1rem 2rem;
+  }
+  .hours div {
+    margin: 0;
   }
 }
 @media (max-width: 555px) {
