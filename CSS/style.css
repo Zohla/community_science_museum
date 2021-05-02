@@ -202,7 +202,11 @@ ul {
 }
 
 /* CONTACT-PAGE */
-.contact-page {
+.contact-main section {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 3rem 5rem;
 }
 .contact-form,
 .contact,
@@ -217,11 +221,11 @@ ul {
   display: flex;
   flex-direction: column;
   width: 20rem;
-  margin: 2rem auto;
+  /*  margin: 2rem auto; */
 }
-.mapouter {
+/* .mapouter {
   padding: 5rem;
-}
+} */
 .contact-list {
   display: flex;
   justify-content: center;
@@ -230,6 +234,9 @@ ul {
 }
 .contact-list li {
   margin-top: 0.5rem;
+}
+.contact-list li:last-child {
+  margin-top: 1.5rem;
 }
 .contact-icon {
   color: var(--literature);
@@ -388,6 +395,14 @@ ul {
       ". .explore ."
       ". .  ."
       "interactive interactive interactive";
+  }
+  .contact-main section {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  .contact-form {
+    margin: auto;
+    margin-top: 3rem;
   }
 }
 @media (max-width: 555px) {
