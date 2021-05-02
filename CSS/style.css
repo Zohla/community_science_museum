@@ -147,6 +147,12 @@ ul {
 .categories div {
   margin: 3rem auto;
 }
+.categories div img {
+  filter: drop-shadow(0 0 3px #000);
+}
+.intro-exhib-wrapper {
+  filter: drop-shadow(0 0 3px #000);
+}
 .interactiv-exhib img {
   width: 15rem;
 }
@@ -221,6 +227,9 @@ ul {
   justify-content: center;
   flex-direction: column;
   font-size: 1.25rem;
+}
+.contact-list li {
+  margin-top: 0.5rem;
 }
 .contact-icon {
   color: var(--literature);
