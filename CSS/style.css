@@ -437,6 +437,10 @@ nav label {
     padding: 1rem;
     margin: 0 0 1rem 1rem;
   }
+  .navigation li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
   header {
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -450,6 +454,14 @@ nav label {
   .logo {
     height: 5rem;
   }
+  .interactive-activities-wrapper div {
+    flex-direction: column;
+  }
+  i.social-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -462,11 +474,11 @@ nav label {
       "explore"
       "."
       "interactive";
-    /* display: flex;
+/* display: flex;
     flex-direction: column;
-    height: 30rem; */
+    height: 30rem;
   }
   .hero-interacive {
     margin-top: 15rem;
   }
-}
+} */
