@@ -141,7 +141,7 @@ nav label {
     ". . . ."
     "interactive interactive interactive interactive";
 }
-
+/* INDEX */
 .linear-background {
   background-image: linear-gradient(#363f65, #506bdc);
 }
@@ -190,7 +190,8 @@ nav label {
 .categories img {
   max-height: 15rem;
 }
-.categories h2 {
+.categories h2,
+.news-heading {
   text-align: center;
   color: var(--grey);
   padding: 3rem 0 1rem 0;
@@ -203,6 +204,22 @@ nav label {
 }
 .cat-library img {
   border: var(--literature) solid 0.3rem;
+}
+.news-heading {
+}
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+.news-item {
+  margin: 2rem;
+  max-width: 15rem;
+}
+.news-item img {
+  max-height: 15rem;
 }
 
 /* Fix for text on hero image since firefox doesn't support backdrop-filter */
@@ -438,16 +455,13 @@ nav label {
     margin: 1rem 0 0 1rem;
     color: var(--biology);
   }
-
   .navigation {
     display: none;
     flex-direction: column;
   }
-
   #menu-btn:checked ~ .navigation {
     display: block;
   }
-
   .navigation li {
     border-bottom: var(--literature) solid 1px;
     padding: 1rem;
@@ -457,7 +471,6 @@ nav label {
     margin-bottom: 0;
     border-bottom: none;
   }
-
   .hero {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -469,7 +482,6 @@ nav label {
   .hero-explore {
     justify-self: center;
   }
-
   .interactive-activities-wrapper div {
     flex-direction: column;
   }
