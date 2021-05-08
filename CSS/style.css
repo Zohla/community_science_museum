@@ -381,6 +381,10 @@ nav label {
   }
 }
 @media (max-width: 1024px) {
+  .hero{
+      background-image: url(/img/rsz_1roberto-nickson-medium.jpg);
+      background-position: center;
+  }
 
   .intro-exhib-wrapper,
   .categories div {
@@ -423,6 +427,15 @@ nav label {
   }
 }
 @media (max-width: 768px) {
+    .hero{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "explore"
+         "."
+        "interactive";
+    }
+
   nav label {
     display: block;
     font-size: 2.5rem;
@@ -473,16 +486,3 @@ nav label {
   .involved-main {
     max-width: 75%;
 }
-
-@media (max-width: 550px) {
-  .hero {
-    background-image: url(/img/rsz_1roberto-nickson-mobile.jpg);
-    background-repeat: no-repeat;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "explore"
-      "."
-      "interactive";
-  }
-} 
