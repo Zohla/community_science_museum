@@ -90,8 +90,8 @@ nav label {
 .menu-item:hover {
   color: var(--technology);
 }
-.visiting{
-    color: var(--technology);
+.visiting {
+  color: var(--technology);
 }
 
 .hero-explore {
@@ -327,8 +327,8 @@ nav label {
   font-size: 1.25rem;
   margin: 2rem 0 1rem 0;
 }
-.involved-main p:last-child{
-    margin-bottom: 2rem;
+.involved-main p:last-child {
+  margin-bottom: 2rem;
 }
 
 .explore-image {
@@ -371,7 +371,7 @@ nav label {
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .interactiv-exhib,
   .categories {
     margin: 0 10%;
@@ -380,12 +380,21 @@ nav label {
     margin: 3rem 0.5rem;
   }
 }
-@media (max-width: 1024px) {
-  .hero{
-      background-image: url(/img/rsz_1roberto-nickson-medium.jpg);
-      background-position: center;
+@media only screen and (max-width: 1024px) {
+  .logo {
+    height: 6rem;
   }
-
+  .hero {
+    background-image: url(/img/rsz_1roberto-nickson-medium.jpg);
+    background-position: center;
+    grid-template-columns: auto 25% auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      ". . .  "
+      ". .explore ."
+      ". .  ."
+      "interactive interactive interactive";
+  }
   .intro-exhib-wrapper,
   .categories div {
     margin: 1rem;
@@ -396,15 +405,6 @@ nav label {
   }
   .intro-exhib {
     height: 5rem;
-  }
-  .hero {
-    grid-template-columns: auto 25% auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      ". . .  "
-      ". .explore ."
-      ". .  ."
-      "interactive interactive interactive";
   }
   .contact-main section {
     flex-direction: column;
@@ -426,27 +426,24 @@ nav label {
     margin: 0;
   }
 }
-@media (max-width: 768px) {
-    .hero{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-        "explore"
-         "."
-        "interactive";
-    }
-
+@media only screen and (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    max-height: 30rem;
+  }
   nav label {
     display: block;
     font-size: 2.5rem;
     margin: 1rem 0 0 1rem;
     color: var(--biology);
   }
- 
+
   .navigation {
     display: none;
     flex-direction: column;
   }
+
   #menu-btn:checked ~ .navigation {
     display: block;
   }
@@ -461,17 +458,16 @@ nav label {
     border-bottom: none;
   }
 
-  header {
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    max-height: 30rem;
+  .hero {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "explore"
+      "."
+      "interactive";
   }
-
-  .logo {
-    height: 5rem;
-  }
-  .hero-explore{
-      justify-self: center;
+  .hero-explore {
+    justify-self: center;
   }
 
   .interactive-activities-wrapper div {
@@ -485,4 +481,5 @@ nav label {
   .explore-main,
   .involved-main {
     max-width: 75%;
+  }
 }
