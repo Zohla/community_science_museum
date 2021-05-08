@@ -429,10 +429,15 @@ nav label {
     margin: 1rem 0 0 1rem;
     color: var(--biology);
   }
+ 
   .navigation {
     display: none;
     flex-direction: column;
   }
+  #menu-btn:checked ~ .navigation {
+    display: block;
+  }
+
   .navigation li {
     border-bottom: var(--literature) solid 1px;
     padding: 1rem;
@@ -449,13 +454,13 @@ nav label {
     max-height: 30rem;
   }
 
-  #menu-btn:checked ~ .navigation {
-    display: block;
-  }
-
   .logo {
     height: 5rem;
   }
+  .hero-explore{
+      justify-self: center;
+  }
+
   .interactive-activities-wrapper div {
     flex-direction: column;
   }
