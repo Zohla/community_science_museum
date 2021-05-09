@@ -437,6 +437,9 @@ nav label {
   .intro-exhib {
     height: 5rem;
   }
+  .intro-exhib p {
+    margin-bottom: 0;
+  }
   .contact-main section {
     flex-direction: column;
     margin: 3rem 0;
