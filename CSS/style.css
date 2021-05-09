@@ -362,8 +362,10 @@ nav label {
   margin-bottom: 2rem;
 }
 
-.explore-image {
+.explore-image,
+.involved-img {
   max-height: 20rem;
+  margin: 2rem;
 }
 /* INTERACTIVE */
 .interactive-main {
