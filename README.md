@@ -1,7 +1,7 @@
 # community_science_museum
 Semester project1
 
-Live @ https://quizzical-varahamihira-f72948.netlify.app/
+Live @ https://com-sci-museum.netlify.app/
 
 *Requirements*
 The site must be have a design that appeals to the target audience.
