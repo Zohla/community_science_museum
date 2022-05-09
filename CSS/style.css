@@ -9,6 +9,10 @@
   --biology: #3ea551;
   --literature: #363f65;
   --grey: #707070;
+  --p-normal-mobile: 1rem;
+  --p-large-mobile: 1.25rem;
+  --p-normal-desktop: 1.25rem;
+  --p-small-desktop: 1rem;
 }
 html {
   height: 100%;
@@ -19,6 +23,10 @@ header {
   display: flex;
   justify-content: center;
   border-bottom: var(--literature) solid 1px;
+}
+nav {
+  display: flex;
+  align-items: flex-end;
 }
 body {
   display: flex;
@@ -62,6 +70,9 @@ h1 {
   font-size: 2rem;
   margin-top: 2rem;
 }
+h3 {
+  font-size: 1.5rem;
+}
 /* Global */
 a {
   text-decoration: none;
@@ -71,7 +82,7 @@ ul {
   display: flex;
 }
 .navigation li {
-  margin: 3rem 2rem;
+  margin: 0.5rem 2rem;
 }
 
 .light {
@@ -80,9 +91,10 @@ ul {
 }
 .menu-item {
   font-family: "Open Sans";
-  color: var(--grey);
+  color: #000;
   text-decoration: none;
   font-weight: bold;
+  font-size: var(--p-normal-desktop);
 }
 .menu-btn {
   display: none;
