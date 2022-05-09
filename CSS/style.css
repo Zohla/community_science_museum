@@ -24,10 +24,7 @@ header {
   justify-content: center;
   border-bottom: var(--literature) solid 1px;
 }
-nav {
-  display: flex;
-  align-items: flex-end;
-}
+
 body {
   display: flex;
   flex-direction: column;
